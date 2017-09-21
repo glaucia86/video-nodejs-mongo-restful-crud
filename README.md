@@ -3,11 +3,11 @@ Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.
 
 ## Recursos utilizados no desenvolvimento:
 
-- Node.Js - DOWNLOAD:[AQUI](https://nodejs.org/en/)
+- Node.Js - [DOWNLOAD AQUI](https://nodejs.org/en/)
 - Express.Js ~ v.4.0;
 - Conceito RestFul;
-- MongoDb - DOWNLOAD:[AQUI](https://www.mongodb.com/)
-- Visual Studio Code - DOWNLOAD:[AQUI](https://code.visualstudio.com/)
+- MongoDb - [DOWNLOAD AQUI](https://www.mongodb.com/)
+- Visual Studio Code - [DOWNLOAD AQUI](https://code.visualstudio.com/)
 - Mongoose ~4.x;
 - JSON data (para retornar os dados);
 - PostMan (testar a API criada);
