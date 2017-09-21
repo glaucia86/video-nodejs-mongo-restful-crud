@@ -1,5 +1,5 @@
 # Desenvolvendo uma API RESTful com Node + Express & MongoDB
-Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.Js + MongoDb + Express.js, através do meu canal do Youtube[AQUI]: (https://www.youtube.com/user/l32759)
+Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.Js + MongoDb + Express.js, através do meu canal do Youtube: [AQUI](https://www.youtube.com/user/l32759)
 
 ## Recursos utilizados no desenvolvimento:
 
