@@ -1,0 +1,25 @@
+{
+  "name": "node-api-crud",
+  "version": "1.0.0",
+  "description": "Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.Js + MongoDb + Express.js, através do meu canal do Youtube: [AQUI](https://www.youtube.com/user/l32759)",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --report spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glaucia86/video-nodejs-mongo-restful-crud"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.1",
+    "express": "~4.15.4",
+    "mongoose": "~4.11.12",
+    "request": "~2.82.0"
+  },
+  "author": "Glaucia Lemos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glaucia86/video-nodejs-mongo-restful-crud/issues"
+  },
+  "homepage": "https://github.com/glaucia86/video-nodejs-mongo-restful-crud#readme"
+}

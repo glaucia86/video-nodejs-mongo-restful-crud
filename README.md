@@ -17,6 +17,7 @@ Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.
 - [Aula 01 - Introdução]()
 - [Aula 02 - Configurando o Ambiente de Desenvolvimento]()
 - [Aula 03 - Estruturando o projeto]()
+- [Aula 04 - Desenvolvendo o arquivo 'server.js']()
 
 
 ## Testando a Aplicação no Postman:
