@@ -13,6 +13,14 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+var Produto = require('./app/models/produto');
+
+//URI: MLab
+mongoose.connect('mongodb://<glemos>:<glau123>@ds062448.mlab.com:62448/node-crud-api'); 
+
+//Maneira Local: MongoDb:
+//mongoose.connect('mongodb://localhost:27017/node-crud-api');
 
 //Configuração da variável app para usar o 'bodyParser()':
 app.use(bodyParser.urlencoded({ extended: true }));
