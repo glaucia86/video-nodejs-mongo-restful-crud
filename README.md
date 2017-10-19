@@ -14,11 +14,12 @@ Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.
 
 ## Conteúdo do Curso: (* em desenvolvimento)
 
-- [Aula 01 - Introdução]()
-- [Aula 02 - Configurando o Ambiente de Desenvolvimento]()
-- [Aula 03 - Estruturando o projeto]()
-- [Aula 04 - Desenvolvendo o arquivo 'server.js']()
-
+- [Aula 01 - Introdução](https://www.youtube.com/watch?v=qwgDzi8TGco);
+- [Aula 02 - Configurando o Ambiente de Desenvolvimento](https://www.youtube.com/edit?o=U&video_id=yBx35VkBWD4);
+- [Aula 03 - Estruturando o projeto](https://www.youtube.com/watch?v=SmlEZ8Ipj0M);
+- [Aula 04 - Desenvolvendo o arquivo 'server.js'](https://www.youtube.com/watch?v=gqRAgXBkOXY);
+- [Aula 05 - Criando a Classe 'Produto' com Mongoose](https://www.youtube.com/watch?v=gSutX_3L9WE);
+- [Aula 06 - Criando conta no MLab e Configuração do Ambiente para o BD]();
 
 ## Testando a Aplicação no Postman:
 
