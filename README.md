@@ -22,7 +22,7 @@ Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.
 - [Aula 06 - Criando conta no MLab e Configuração do Ambiente para o BD](https://youtu.be/kjb3CFvAwbU);
 - [Aula 07 - Desenvolvendo uma Rota Middleware via Express](https://youtu.be/A0IPtXULRPM);
 - [Aula 08 - Desenvolvendo a Rota: POST](https://youtu.be/onPlF3gC0T4);
-- [Aula 09 - Desenvolvendo a Rota: GET ALL]();
+- [Aula 09 - Desenvolvendo a Rota: GET ALL](https://youtu.be/2oU7rOe1c3I);
 
 ## Testando a Aplicação no Postman:
 
