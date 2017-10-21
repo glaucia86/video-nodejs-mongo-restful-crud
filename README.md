@@ -21,7 +21,7 @@ Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.
 - [Aula 05 - Criando a Classe 'Produto' com Mongoose](https://www.youtube.com/watch?v=gSutX_3L9WE);
 - [Aula 06 - Criando conta no MLab e Configuração do Ambiente para o BD](https://youtu.be/kjb3CFvAwbU);
 - [Aula 07 - Desenvolvendo uma Rota Middleware via Express](https://youtu.be/A0IPtXULRPM);
-- [Aula 08 - Desenvolvendo a Rota: POST]();
+- [Aula 08 - Desenvolvendo a Rota: POST](https://youtu.be/onPlF3gC0T4);
 
 ## Testando a Aplicação no Postman:
 
