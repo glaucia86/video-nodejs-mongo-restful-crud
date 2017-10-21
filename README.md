@@ -21,6 +21,7 @@ Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.
 - [Aula 05 - Criando a Classe 'Produto' com Mongoose](https://www.youtube.com/watch?v=gSutX_3L9WE);
 - [Aula 06 - Criando conta no MLab e Configuração do Ambiente para o BD](https://youtu.be/kjb3CFvAwbU);
 - [Aula 07 - Desenvolvendo uma Rota Middleware via Express](https://youtu.be/A0IPtXULRPM);
+- [Aula 08 - Desenvolvendo a Rota: POST]();
 
 ## Testando a Aplicação no Postman:
 
@@ -31,7 +32,7 @@ poder testar cada API criada!
   ROTA                    |     HTTP(Verbo)   |      Descrição        | 
 ------------------------- | ----------------- | --------------------- | 
 /api/produtos             |       GET         | Selecionar Todos      | 
-/api/produtos             |       POST        | Atualizar Por Id      | 
+/api/produtos             |       POST        | Criar Produto         | 
 /api/produtos/:produto_id |       GET         | Selecionar Por Id     | 
 /api/produtos/:produto_id |       PUT         | Atualizar Por Id      |    
 /api/produtos/:produto_id |       DELETE      | Excluir Por Id        |

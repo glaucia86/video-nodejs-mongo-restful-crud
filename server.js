@@ -17,7 +17,7 @@ var mongoose = require('mongoose');
 var Produto = require('./app/models/produto');
 
 //URI: MLab
-mongoose.connect('mongodb://<glemos>:<glau123>@ds062448.mlab.com:62448/node-crud-api', {
+mongoose.connect('mongodb://glemos:glau123@ds062448.mlab.com:62448/node-crud-api', {
     useMongoClient: true
 }); 
 
@@ -52,6 +52,30 @@ router.get('/', function(req, res) {
 
 //API's:
 //==============================================================================
+
+//Rotas que terminarem com '/produtos' (servir: GET ALL & POST)
+router.route('/produtos')
+
+    /* 1) Método: Criar Produto (acessar em: POST http://localhost:8000/api/produtos)  */
+    .post(function(req, res) {
+        var produto = new Produto();
+
+        //Aqui vamos setar os campos do produto (via request):
+        produto.nome = req.body.nome;
+        produto.preco = req.body.preco;
+        produto.descricao = req.body.descricao;
+
+        produto.save(function(error) {
+            if(error)
+                res.send('Erro ao tentar salvar o Produto....: ' + error);
+            
+            res.json({ message: 'Produto Cadastrado com Sucesso!' });
+        });
+    });
+
+
+
+
 
 //Definindo um padrão das rotas prefixadas: '/api':
 app.use('/api', router);
