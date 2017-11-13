@@ -4,7 +4,7 @@
   "description": "Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.Js + MongoDb + Express.js, através do meu canal do Youtube: [AQUI](https://www.youtube.com/user/l32759)",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --report spec"
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/glaucia86/video-nodejs-mongo-restful-crud/issues"
   },
-  "homepage": "https://github.com/glaucia86/video-nodejs-mongo-restful-crud#readme"
+  "homepage": "https://github.com/glaucia86/video-nodejs-mongo-restful-crud#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }

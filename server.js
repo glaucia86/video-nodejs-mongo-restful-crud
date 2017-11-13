@@ -83,6 +83,22 @@ router.route('/produtos')
         });
     });
 
+    //Rotas que irão terminar em '/produtos/:produto_id' (servir tanto para: GET, PUT & DELETE: id):
+    router.route('/produtos/:produto_id')
+
+    /* 3) Método: Selecionar por Id: (acessar em: GET http://localhost:8000/api/produtos/:produto_id) */
+    .get(function (req, res) {
+        
+        //Função para poder Selecionar um determinado produto por ID - irá verificar se caso não encontrar um detemrinado
+        //produto pelo id... retorna uma mensagem de error:
+        Produto.findById(req.params.produto_id, function(error, produto) {
+            if(error)
+                res.send('Id do Produto não encontrado....: ' + error);
+
+            res.json(produto);
+        });
+    })
+
 
 //Definindo um padrão das rotas prefixadas: '/api':
 app.use('/api', router);
