@@ -23,6 +23,9 @@ Código desenvolvido durante a gravação das videos aulas sobre: CRUD com Node.
 - [Aula 07 - Desenvolvendo uma Rota Middleware via Express](https://youtu.be/A0IPtXULRPM);
 - [Aula 08 - Desenvolvendo a Rota: POST](https://youtu.be/onPlF3gC0T4);
 - [Aula 09 - Desenvolvendo a Rota: GET ALL](https://youtu.be/2oU7rOe1c3I);
+- [Aula 10 - Desenvolvendo a Rota: GET By Id](https://youtu.be/1gGfo3UYq-0);
+- [Aula 11 - Desenvolvendo a Rota: PUT](https://youtu.be/tTtaH_ZCQnM);
+- [Aula 12 - Desenvolvendo a Rota: DELETE & Persistência de Dados via MongoDb](https://youtu.be/w0H2bsNRuzI);
 
 ## Testando a Aplicação no Postman:
 
@@ -81,7 +84,7 @@ Ao digitar a instrução acima, automaticamente ele irá baixar todas as depend�
 Bom, agora na mesma tela do cmd, basta iniciar o server para o projeto ser executado localmente.
 
 ```
-node server.js
+npm run dev
 ```
 
 Depois, você precisará abrir um outro terminal na sua máquina e iniciar o MongoDb. Basta digitar na tela do cmd o seguinte comando:
