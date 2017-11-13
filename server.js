@@ -3,7 +3,7 @@
  * Arquivo: server.js
  * Descrição: 
  * Author:
- * Data de Criação: 21/09/2017
+ * Data de Criação: 13/11/2017
  * 
  */
 
@@ -15,11 +15,12 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var Produto = require('./app/models/produto');
+mongoose.Promise = global.Promise;
 
 //URI: MLab
 mongoose.connect('mongodb://glemos:glau123@ds062448.mlab.com:62448/node-crud-api', {
     useMongoClient: true
-}); 
+});
 
 //Maneira Local: MongoDb:
 /*mongoose.connect('mongodb://localhost:27017/node-crud-api', {
@@ -98,6 +99,42 @@ router.route('/produtos')
             res.json(produto);
         });
     })
+
+    /* 4) Método: Atualizar por Id: (acessar em: PUT http://localhost:8000/api/produtos/:produto_id) */
+    .put(function(req, res) {
+
+        //Primeiro: para atualizarmos, precisamos primeiro achar 'Id' do 'Produto':
+        Produto.findById(req.params.produto_id, function(error, produto) {
+            if (error) 
+                res.send("Id do Produto não encontrado....: " + error);
+
+                //Segundo: 
+                produto.nome = req.body.nome;
+                produto.preco = req.body.preco;
+                produto.descricao = req.body.descricao;
+
+                //Terceiro: Agora que já atualizamos os dados, vamos salvar as propriedades:
+                produto.save(function(error) {
+                    if(error)
+                        res.send('Erro ao atualizar o produto....: ' + error);
+
+                    res.json({ message: 'Produto atualizado com sucesso!' });
+                });
+            });
+        })
+
+        /* 5) Método: Excluir por Id (acessar: http://localhost:8000/api/produtos/:produto_id) */
+        .delete(function(req, res) {
+            
+            Produto.remove({
+                _id: req.params.produto_id
+                }, function(error) {
+                    if (error) 
+                        res.send("Id do Produto não encontrado....: " + error);
+
+                    res.json({ message: 'Produto Excluído com Sucesso!' });
+                });
+            });
 
 
 //Definindo um padrão das rotas prefixadas: '/api':
